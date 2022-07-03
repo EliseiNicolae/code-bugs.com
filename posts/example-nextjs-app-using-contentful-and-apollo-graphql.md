@@ -16,9 +16,9 @@ For this tutorial we're going to use:
  - Contentful -> as CMS, to write the articles
  - Apollo Graphql -> to make the communication between Next.JS and Contentful.
 
-All pages will are created on build time using Next.js using `getStaticPaths` and `getStaticProps` for a better performance,
-and ability to scale the project using CDN.
-    Before we'll start, make sure you've logged in Contentful, and have already created a space.
+All pages are created on build time using Next.js `getStaticPaths` and `getStaticProps` for a better performance,
+and ability to scale the project using CDN.  
+Before we'll start, make sure you've logged in Contentful, and have already created a space.
 
 ### 1. Clone the repository
 You can clone the repository from [here](https://github.com/EliseiNicolae/Example-Contentful-Next.js-Graphql) or by
