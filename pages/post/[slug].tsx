@@ -2,9 +2,36 @@ import fs from "fs";
 import matter from "gray-matter";
 import Layout from "@/components/Layout";
 
-const md = require("markdown-it")();
-const lazy_loading = require("markdown-it-image-lazy-loading");
-md.use(lazy_loading);
+const md = require("markdown-it")({
+  html: true,
+});
+// replace a default image rule
+md.renderer.rules.image = function (
+  tokens: { [x: string]: any },
+  idx: string | number,
+  options: any,
+  env: any,
+  slf: {
+    renderInlineAsText: (arg0: any, arg1: any, arg2: any) => any;
+    renderToken: (arg0: any, arg1: any, arg2: any) => any;
+  },
+) {
+  var token = tokens[idx];
+  token.attrs[token.attrIndex("alt")][1] = slf.renderInlineAsText(
+    token.children,
+    options,
+    env,
+  );
+  // this is the line of code responsible for an additional 'loading' attribute
+  token.attrSet("loading", "lazy");
+  token.attrSet(
+    "style",
+    "width: 100%; height: 300px !important; object-fit: contain",
+  );
+  token.attrSet("width", "100%");
+  token.attrSet("height", "300px");
+  return slf.renderToken(tokens, idx, options);
+};
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("posts");
@@ -37,6 +64,7 @@ export default function PostPage({ frontVariables, content, slug }: any) {
       <div className="prose prose-sm sm:prose d:prose-lg  mx-auto">
         <h1>{frontVariables?.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: md.render(content) }} />
+        <div className={"mb-4"}>🚀 Enjoy!</div>
         <a
           href={`https://github.com/EliseiNicolae/code-bugs.com/blob/main/posts/${slug}.md`}>
           Edit on Github
