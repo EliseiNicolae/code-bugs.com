@@ -2,7 +2,7 @@
 title: 'Update all the Node.js dependencies to their latest version'
 metaTitle: 'How to update all packages from package.json'
 metaDesc: 'Best way to upgrade the dependencies from package.json with terminal commands.'
-date: '2022-07-22'
+date: '2022-06-22'
 keywords:
 - nodejs
 - package.json
@@ -24,5 +24,3 @@ npm install -g npm-check-updates
    ncu -u
 ```
 3. Check your package.json file, and then run `npm install`
-
-🚀  Enjoy!

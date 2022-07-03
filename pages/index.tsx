@@ -49,7 +49,7 @@ export default function Home({ posts }: any) {
           <Link key={slug} href={`/post/${slug}`}>
             <a
               className="border border-gray-200 hover:shadow-blue-300 w-full rounded-xl shadow-lg
-              overflow-hidden flex flex-col p-4">
+              overflow-hidden flex flex-col p-4 my-2.5">
               <h5>{data.title}</h5>
               <p className={"flex justify-end pt-[15px]"}>{data.date}</p>
             </a>

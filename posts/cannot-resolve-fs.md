@@ -24,5 +24,3 @@ To fix this error add this code in your `package.json`:
     "os": false
   }
 ```
-
-🚀  Enjoy!
