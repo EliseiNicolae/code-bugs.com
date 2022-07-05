@@ -36,7 +36,7 @@ export default function Layout({ seo, children }: any) {
         <meta property="og:title" content={seo?.metaTitle} />
         <meta name="og:description" content={seo?.metaDesc} />
         <meta name="keywords" content={seo?.keywords?.join(", ")} />
-        <link rel="icon" href="../public/images/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <div className="flex flex-col min-h-screen">
         <header className="bg-blue-500 mb-8 py-[5px]">
