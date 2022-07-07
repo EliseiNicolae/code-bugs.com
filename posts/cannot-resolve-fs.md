@@ -1,7 +1,6 @@
 ---
 title: "Module not found: Can't resolve 'fs'"
-metaTitle: "Can't resolve 'fs' solution"
-metaDesc: "./node_modules/image-size/dist/index.js:13:0
+description: "./node_modules/image-size/dist/index.js:13:0
 Module not found: Can't resolve 'fs'"
 date: '2022-07-01'
 keywords:

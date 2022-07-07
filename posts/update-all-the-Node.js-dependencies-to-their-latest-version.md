@@ -1,7 +1,6 @@
 ---
 title: 'Update all the Node.js dependencies to their latest version'
-metaTitle: 'How to update all packages from package.json'
-metaDesc: 'Best way to upgrade the dependencies from package.json with terminal commands.'
+description: 'Best way to upgrade the dependencies from package.json with terminal commands.'
 date: '2022-06-22'
 keywords:
 - nodejs

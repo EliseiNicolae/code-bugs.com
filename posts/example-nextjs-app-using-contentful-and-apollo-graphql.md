@@ -1,7 +1,6 @@
 ---
 title: 'Project structure using Next.JS, Contentful and Apollo Graphql'
-metaTitle: 'Project structure using Next.JS, Contentful and Apollo Graphql'
-metaDesc: 'Basic start project structure using Next.JS, Contentful and Apollo Graphql. '
+description: 'Basic start project structure using Next.JS, Contentful and Apollo Graphql. '
 date: '2022-07-04'
 keywords:
 - Contentful

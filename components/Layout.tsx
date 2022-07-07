@@ -30,11 +30,19 @@ export default function Layout({ seo, children }: any) {
         `}
       </Script>
       <Head>
-        <title>{seo?.metaTitle}</title>
-        <meta property="title" content={seo?.metaTitle} />
-        <meta name="description" content={seo?.metaDesc} />
-        <meta property="og:title" content={seo?.metaTitle} />
-        <meta name="og:description" content={seo?.metaDesc} />
+        <title>{seo?.title}</title>
+        <meta property="title" content={seo?.title} />
+        <meta name="description" content={seo?.description} />
+
+        <meta property="og:title" content={seo?.title} />
+        <meta name="og:description" content={seo?.description} />
+        <meta property="og:site_name" content="Code Bugs" />
+        <meta property="og:type" content="article" />
+
+        <meta name="twitter:title" content={seo?.title} />
+        <meta name="twitter:description" content={seo?.description} />
+        <meta name="twitter:title" content={seo?.title} />
+        <meta name="twitter:card" content="summary" />
         <meta name="keywords" content={seo?.keywords?.join(", ")} />
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
