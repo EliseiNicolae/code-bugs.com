@@ -61,7 +61,7 @@ export async function getStaticProps({ params: { slug } }: any) {
 export default function PostPage({ frontVariables, content, slug }: any) {
   return (
     <Layout seo={frontVariables}>
-      <div className="prose prose-sm sm:prose d:prose-lg  mx-auto">
+      <div className="prose prose-sm sm:prose d:prose-lg  mx-auto !max-w-[800px]">
         <h1>{frontVariables?.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: md.render(content) }} />
         <div className={"mb-4"}>🚀 Enjoy!</div>
