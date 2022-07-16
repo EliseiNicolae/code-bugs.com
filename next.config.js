@@ -6,7 +6,7 @@ const nextConfig = {
       {
         source: "/post/:path*",
         destination: "/:path*",
-        permanent: false,
+        permanent: true,
       },
       {
         source: "/setup-Clion",
