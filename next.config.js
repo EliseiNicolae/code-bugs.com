@@ -4,6 +4,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/post/:path*",
+        destination: "/:path*",
+        permanent: false,
+      },
+      {
         source: "/setup-Clion",
         destination: "/",
         permanent: true,
@@ -11,13 +16,6 @@ const nextConfig = {
       {
         source: "/How-to-upload-your-project-to-Github",
         destination: "/",
-        permanent: true,
-      },
-      {
-        source:
-          "/post/update-all-the-Node.js-dependencies-to-their-latest-version",
-        destination:
-          "update-all-the-Node.js-dependencies-to-their-latest-version",
         permanent: true,
       },
     ];
