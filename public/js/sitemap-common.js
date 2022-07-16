@@ -24,7 +24,7 @@ function generateSitemap() {
           .map(post => {
             return `
               <url>
-                <loc>https://code-bugs.com/post/${post.slug}</loc>
+                <loc>https://code-bugs.com/${post.slug}</loc>
                 <lastmod>${
                   post.frontVariables.date || new Date().toISOString()
                 }</lastmod>

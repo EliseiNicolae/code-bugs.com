@@ -47,7 +47,7 @@ export default function Home({ posts }: any) {
           </h1>
         </div>
         {posts.map(({ slug, data }: any) => (
-          <Link key={slug} href={`/post/${slug}`}>
+          <Link key={slug} href={`/${slug}`}>
             <a
               className="border border-gray-200 hover:shadow-blue-300 w-full rounded-xl shadow-lg
               overflow-hidden flex flex-col p-4 my-2.5">
