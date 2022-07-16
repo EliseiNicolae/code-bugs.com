@@ -4,8 +4,10 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: "/post/:path*",
-        destination: "/:path*",
+        source:
+          "/post/update-all-the-Node.js-dependencies-to-their-latest-version",
+        destination:
+          "/update-all-the-Node.js-dependencies-to-their-latest-version",
         permanent: true,
       },
       {
