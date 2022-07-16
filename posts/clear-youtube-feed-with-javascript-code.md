@@ -1,13 +1,13 @@
 ---
-title: "Clear youtube feed with javascript code"
-description: "An easy method where you can make your youtube feed fresh again 🚀"
+title: "Clear YouTube feed with javascript code"
+description: "An easy method where you can make your YouTube feed fresh again 🚀"
 date: '2022-07-16'
 keywords:
 - javascript
 - javascript vanilla
 - youtube
 - feed
-- clear Youtube feed
+- clear YouTube feed
 ---
 
 <iframe width="100%" height="415"
@@ -17,7 +17,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
   
   
-The above script will take all videos and it will make them uninteresting. Paste the next code in your console:
+The bellow script will take all videos, and it will make them uninteresting. Paste the next code in your console:
 ```
 (()=>{
     markAllVideosAsNotBeingInteresting({
