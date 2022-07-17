@@ -1,5 +1,5 @@
 ---
-title: "Scrolling issue in macOS Monterey M1 Macbook Pro"
+title: "Scrolling issue by trackpad in macOS Monterey M1 Macbook Pro"
 description: "You need to disable Low power mode and Optimise video streaming while on battery from System Preferences -> Battery"
 date: '2022-07-17'
 keywords:
@@ -10,6 +10,7 @@ keywords:
 - scrolling
 - issue
 - two fingers
+- trackpad
 ---
 
 ### Solution:
