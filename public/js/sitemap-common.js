@@ -17,8 +17,8 @@ function generateSitemap() {
         <url>
           <loc>https://code-bugs.com/</loc>
           <lastmod>2021-09-22</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>1.0</priority>
+          <changefreq>weekly</changefreq>
+          <priority>0.5</priority>
         </url>
         ${posts
           .map(post => {
@@ -28,8 +28,8 @@ function generateSitemap() {
                 <lastmod>${
                   post.frontVariables.date || new Date().toISOString()
                 }</lastmod>
-                <changefreq>monthly</changefreq>
-                <priority>1.0</priority>
+                <changefreq>weekly</changefreq>
+                <priority>0.5</priority>
               </url>
             `;
           })
