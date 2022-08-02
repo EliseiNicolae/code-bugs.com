@@ -16,20 +16,12 @@ function generateSitemap() {
       <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         <url>
           <loc>https://code-bugs.com/</loc>
-          <lastmod>2021-09-22</lastmod>
-          <changefreq>weekly</changefreq>
-          <priority>0.5</priority>
         </url>
         ${posts
           .map(post => {
             return `
               <url>
                 <loc>https://code-bugs.com/${post.slug}</loc>
-                <lastmod>${
-                  post.frontVariables.date || new Date().toISOString()
-                }</lastmod>
-                <changefreq>weekly</changefreq>
-                <priority>0.5</priority>
               </url>
             `;
           })
